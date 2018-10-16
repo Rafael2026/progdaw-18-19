@@ -28,7 +28,7 @@ public class ejercicio20 {
       } else {
         System.out.print(simbolo);
         
-        //bucle para pintar los huecos interiores de la pirámide
+        //bucle para pintar los huefcos interiores de la pirámide
         for (int j=1; j<=anchoPiramide-2; j++) {
             System.out.print(" ");        
         }
