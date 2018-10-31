@@ -19,6 +19,11 @@ public class ejercicio01 {
       
     }
   
+    if (numeroEnBinario == "") {
+      numeroEnBinario = "0";
+      
+    }
+  
     System.out.println("El número " + numeroDecimal + " se escribe en binario así: " + numeroEnBinario);
   }
 }
