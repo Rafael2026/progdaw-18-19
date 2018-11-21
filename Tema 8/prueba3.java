@@ -1,4 +1,4 @@
-public class prueba2 {
+public class prueba3 {
 
   public static void main (String[] args) {
     int tamanio;
@@ -23,23 +23,12 @@ public class prueba2 {
     
     mostrarArray(elementos,tamanio);
     
-    // calcular la media
-    
-    /*
-    float media = 0;
-    for (int i=0; i<tamanio; i++) {
-      media += elementos[i];
-    }
-    media /= (float)tamanio;
-    */
-    
-    float media = calculaMedia (elementos,tamanio);
-    
+   
     System.out.println();
     System.out.print("La media de los valores ");
     mostrarArray(elementos,tamanio);
 
-    System.out.print(" es: "+media);
+    System.out.print(" es: " + calculaMedia (elementos,tamanio));
     
   }
   
