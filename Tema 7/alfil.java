@@ -61,6 +61,7 @@ public class alfil {
       for (j=0; j<8; j++) {
         if (tablero[i][j]==2) {
           System.out.print((char)('a'+j));
+          //System.out.print('a'+j);
           System.out.print(8-i);
           System.out.print(" ");
         }
