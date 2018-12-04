@@ -92,5 +92,27 @@ public class manejoArraysOneDimEnteros {
     }
   }
   
+  public static void rotaDerechaArrayInt (int [] array, int tama, int n) {
+    int aux;
+    
+    for (int i=0; i<n; i++) {
+      rotaUnaPosDerechaArrayInt(array,tama);
+    }
+  }
   
+  private static void rotaUnaPosDerechaArrayInt (int[] array, int tama) {
+    if (tama >0) {
+      int aux = array[tama-1];
+      for (int i=tama-1; i>0; i--) {
+        array[i] = array[i-1];
+      }
+      array[0] = aux;
+    }    
+  }
+  
+  
+  public static void rotaIzquierdaArrayInt (int[] array, int tama, int n) {
+    int rotacionesADerecha = tama - n;
+    rotaDerechaArrayInt (array,tama,rotacionesADerecha);
+  }
 }

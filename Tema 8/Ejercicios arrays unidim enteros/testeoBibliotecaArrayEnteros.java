@@ -1,6 +1,7 @@
 import biblioArraysOneDimEnteros.manejoArraysOneDimEnteros;
 
 
+
 public class testeoBibliotecaArrayEnteros {
   
   static final int TAMANIO=11;
@@ -31,6 +32,21 @@ public class testeoBibliotecaArrayEnteros {
     
     System.out.println();
     manejoArraysOneDimEnteros.volteaArrayInt(arrayDeEnteros,TAMANIO);
+    for (int i=0; i<TAMANIO; i++){
+      System.out.print(arrayDeEnteros[i]+", ");
+    }
+  
+    System.out.println();
+    
+    manejoArraysOneDimEnteros.rotaDerechaArrayInt(arrayDeEnteros,TAMANIO,2);
+    for (int i=0; i<TAMANIO; i++){
+      System.out.print(arrayDeEnteros[i]+", ");
+    }
+  
+    System.out.println();
+    
+    
+    manejoArraysOneDimEnteros.rotaIzquierdaArrayInt(arrayDeEnteros,TAMANIO,1);
     for (int i=0; i<TAMANIO; i++){
       System.out.print(arrayDeEnteros[i]+", ");
     }

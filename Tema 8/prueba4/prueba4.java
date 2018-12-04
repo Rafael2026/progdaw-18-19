@@ -30,7 +30,9 @@ public class prueba4 {
     System.out.print("La media de los valores ");
     mostrarArray(elementos,tamanio);
 
-    System.out.print(" es: " + misFunciones.funcionesArray.calculaMedia (elementos,tamanio));
+    // se puede invocar de las dos maneras
+    //System.out.print(" es: " + misFunciones.funcionesArray.calculaMedia (elementos,tamanio));
+    System.out.print(" es: " + funcionesArray.calculaMedia (elementos,tamanio));
     
   }
   
