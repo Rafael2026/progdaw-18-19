@@ -1,4 +1,5 @@
-import misFunciones.funcionesArray;
+//import misFunciones.funcionesArray;
+import misFunciones.*;
 
 public class prueba4 {
 
