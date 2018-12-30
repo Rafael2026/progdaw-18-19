@@ -7,7 +7,7 @@ public class juegoDelAhorcado {
     char palabraOculta[];
     palabraOculta = palabraEnBlanco(palabraElegida.length);
    
-    presentaPalabra(palabraElegida);
+    //presentaPalabra(palabraElegida);
     presentaPalabra(palabraOculta);
     
     char letraUsuario;
@@ -35,6 +35,7 @@ public class juegoDelAhorcado {
       System.out.println("¡¡ HAS GANADO!! ");
     } else if (fallos==0) {
       System.out.println("Has agotado todas las vidas.");
+      presentaPalabra(palabraElegida);
     }
     
   }
