@@ -1,12 +1,12 @@
 public class Mamifero extends Animal {
-  private int tiempoGestacion;
-  
-  
-  
+  private int tiempoGestacion=12;
+
+
   public Mamifero () {
     super("MACHO");
+    this.tiempoGestacion=0;
   }
-  
+
   public Mamifero (String sex) {
     super(sex);
     this.tiempoGestacion=0;
@@ -20,7 +20,7 @@ public class Mamifero extends Animal {
     super(sex);
     this.tiempoGestacion = tiempoGest;
   }
-  
+
   public String toString() {
     String salida = super.toString();
     salida += "\nTiempo gestación: "+this.tiempoGestacion;

@@ -4,14 +4,14 @@ public abstract class Animal {
   
   public Animal () {
     this.edad = 0;
-    this.sexo = "HEMBRA";
+    this.sexo = "HEMBRAx";
   }
-  
+
   public Animal (String sex) {
     this.edad = 0;
     this.sexo = sex;
   }
-  
+
   public void setEdad (int tiempo) {
     this.edad = tiempo;
   }

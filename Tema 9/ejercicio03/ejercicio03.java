@@ -6,6 +6,7 @@ public class ejercicio03 {
     
     prueba2.setEdad(150);   
     
-    System.out.println(prueba2);
+       
+    System.out.println(prueba);
   }
 }
