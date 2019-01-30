@@ -1,23 +1,31 @@
 import java.util.ArrayList;
 
 public class TableroTorres {
-  private ArrayList<Torre> torres = new ArrayList<Torre>();
-  /* el índice de cada torre va a representar el nº de torre -1 */
+  // Un tablero consistirá en un ArrayList que tendrá 3 torres
+  private ArrayList<Torre> torres;
+  
+  
   
   public TableroTorres (int numDiscos) {
+    // Inicialmente, ArrayList de Torres vacío
+    this.torres = new ArrayList<Torre>();
+    
     Disco discoAuxiliar;
     Torre torreAuxiliar;
     
     int radio = numDiscos;
     
+    // Creación de la primera Torre; inicialmente, sin discos
     torreAuxiliar = new Torre();
     
+    // Introducción de los discos en la primera Torre
     for (int i=0; i<numDiscos; i++) {
       discoAuxiliar = new Disco(radio);
       torreAuxiliar.apilaDisco(discoAuxiliar);
       radio--;
     }
     
+    // Creación  de las otras dos torres, sin discos
     this.torres.add(torreAuxiliar);
     
     for (int i=0; i<2; i++) {
@@ -27,6 +35,7 @@ public class TableroTorres {
     
   }
   
+  // Implementación del movimiento de discos entre 2 postes
   public boolean intentaMover (int posteOrigen, int posteDestino) {
     boolean sePuede = true;
     
@@ -54,6 +63,7 @@ public class TableroTorres {
     
   }
   
+  // Comprobación de si se ha acabado el juego
   public boolean checkHanoi () {
     boolean resuelto = false;
     if ((this.torres.get(0).alturaTorre() == 0) && (this.torres.get(1).alturaTorre() == 0)) {
@@ -63,7 +73,7 @@ public class TableroTorres {
     return resuelto;
   }
   
-  
+  // Presentación por pantalla del Tablero
   public void muestraTorres () {
     int altura = 0;
     
