@@ -7,7 +7,8 @@ public class TorresHanoiPOO {
    
     TableroTorres postes;
     int cantidadDiscos;
-   
+    
+  
     System.out.println("JUEGO DE LAS TORRES DE HANOI.");
    
     do {

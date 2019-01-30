@@ -8,14 +8,14 @@ public class TableroTorres {
     Disco discoAuxiliar;
     Torre torreAuxiliar;
     
-    int diametro = numDiscos;
+    int radio = numDiscos;
     
     torreAuxiliar = new Torre();
     
     for (int i=0; i<numDiscos; i++) {
-      discoAuxiliar = new Disco(diametro);
+      discoAuxiliar = new Disco(radio);
       torreAuxiliar.apilaDisco(discoAuxiliar);
-      diametro--;
+      radio--;
     }
     
     this.torres.add(torreAuxiliar);
