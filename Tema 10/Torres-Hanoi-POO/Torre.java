@@ -16,21 +16,30 @@ public class Torre {
 
   // Extraer, y devolver, un Disco de una Torre
   public Disco sacaDisco() {
-    Disco resultado = this.miraDisco();
-    pilaDeDiscos.remove(pilaDeDiscos.size()-1);
+    Disco resultado = null;
+    if (pilaDeDiscos.size() > 0) {
+      resultado = this.miraDisco();
+      pilaDeDiscos.remove(pilaDeDiscos.size()-1);
+    }
     return resultado;
   }
   
   // Devolver el Disco situado en la cima de la Torre
   public Disco miraDisco() {
-    Disco resultado = pilaDeDiscos.get(pilaDeDiscos.size()-1);
+    Disco resultado = null;
+    if (pilaDeDiscos.size() > 0) {
+      resultado = pilaDeDiscos.get(pilaDeDiscos.size()-1);
+    }
     return resultado;
   }
   
   // Devolver el Disco situado en la posición indicada como argumento
   public Disco miraDisco (int indice) {
     // El índice que se le pase a esta función debe oscilar entre 0 y la altura de la Torre-1
-    Disco resultado = pilaDeDiscos.get(indice);
+    Disco resultado = null;
+    if ((indice >= 0) && (indice < pilaDeDiscos.size())) {
+      resultado = pilaDeDiscos.get(indice);
+    }
     return resultado;
   }
   
